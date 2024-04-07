@@ -15,6 +15,7 @@ router.post('/', async (req, res) => {
     title: req.body.title,
     description: req.body.description,
   });
+  task = await task.save();
   res.send(task);
 });
 

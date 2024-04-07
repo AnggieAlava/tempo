@@ -10,5 +10,5 @@ api:		## Runs the database
 clean: 		## Cleans the build folder
 	rm -rf .parcel-cache dist
 
-build:		## Runs the frontend
-	npx parcel client/index.html
+front:		## Runs the frontend
+	npx parcel client/index.html --port 3000
